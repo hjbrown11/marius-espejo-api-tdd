@@ -11,6 +11,7 @@ describe('Todos API', () => {
         expect(response.body).toEqual(
           expect.arrayContaining([
             expect.objectContaining({
+              id: expect.any(Number),
               name: expect.any(String),
               completed: expect.any(Boolean),
             }),
